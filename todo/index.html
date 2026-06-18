@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <div class="header-content">
+                <h1>📝 My Todo List</h1>
+                <p class="subtitle">Stay organized and productive</p>
+            </div>
+        </header>
+
+        <main class="app-main">
+            <!-- Input Section -->
+            <div class="input-section">
+                <form id="todoForm" class="todo-form">
+                    <div class="input-group">
+                        <input 
+                            type="text" 
+                            id="todoInput" 
+                            class="todo-input" 
+                            placeholder="Add a new task..."
+                            autocomplete="off"
+                        >
+                        <button type="submit" class="btn btn-primary">
+                            <span>Add Task</span>
+                        </button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="active">Active</button>
+                    <button class="filter-btn" data-filter="completed">Completed</button>
+                </div>
+                <div class="task-count">
+                    <span id="activeCount">0</span> active • <span id="totalCount">0</span> total
+                </div>
+            </div>
+
+            <!-- Todo List Section -->
+            <div class="todo-list-section">
+                <div id="emptyState" class="empty-state">
+                    <div class="empty-icon">✨</div>
+                    <h2>No tasks yet</h2>
+                    <p>Add your first task to get started!</p>
+                </div>
+
+                <ul id="todoList" class="todo-list">
+                    <!-- Todos will be inserted here -->
+                </ul>
+            </div>
+
+            <!-- Action Buttons -->
+            <div class="actions-section">
+                <button id="clearCompleted" class="btn btn-secondary" style="display: none;">
+                    Clear Completed
+                </button>
+                <button id="clearAll" class="btn btn-danger" style="display: none;">
+                    Clear All Tasks
+                </button>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="app-footer">
+            <p>Data is saved automatically to your browser</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
