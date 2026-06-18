@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - The Truth about Rachael and Nate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            color: white;
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .gallery-item {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item-image {
+            width: 100%;
+            height: 250px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+
+        .gallery-item-content {
+            padding: 1.5rem;
+        }
+
+        .gallery-item h3 {
+            color: #667eea;
+            margin-bottom: 0.5rem;
+        }
+
+        .gallery-item p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .back-link {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 2rem;
+            transition: opacity 0.3s ease;
+        }
+
+        .back-link:hover {
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.htm" class="back-link">← Back to Home</a>
+        <h1>📸 Picture Gallery</h1>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <div class="gallery-item-image">🗽</div>
+                <div class="gallery-item-content">
+                    <h3>NYC Adventure</h3>
+                    <p>Memories from our trip to New York City with Lonna</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-item-image">🌆</div>
+                <div class="gallery-item-content">
+                    <h3>City Skyline</h3>
+                    <p>Beautiful moments captured against the urban backdrop</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-item-image">🎢</div>
+                <div class="gallery-item-content">
+                    <h3>Fun Times</h3>
+                    <p>Adventures and activities that made us smile</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-item-image">🍽️</div>
+                <div class="gallery-item-content">
+                    <h3>Dining Moments</h3>
+                    <p>Great food and even better company</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-item-image">🌅</div>
+                <div class="gallery-item-content">
+                    <h3>Golden Hours</h3>
+                    <p>Sunset and sunrise moments of beauty</p>
+                </div>
+            </div>
+
+            <div class="gallery-item">
+                <div class="gallery-item-image">📷</div>
+                <div class="gallery-item-content">
+                    <h3>Candid Shots</h3>
+                    <p>Unfiltered moments of genuine joy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

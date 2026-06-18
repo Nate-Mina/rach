@@ -1,22 +1,254 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<title>The Truth about Rachael and Nate</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Truth about Rachael and Nate</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            min-height: 100vh;
+            gap: 0;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.98);
+            backdrop-filter: blur(10px);
+            padding: 1.5rem 2rem;
+            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            color: #667eea;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 0.95rem;
+            margin-top: 0.5rem;
+        }
+
+        .sidebar {
+            width: 280px;
+            background: white;
+            padding: 2rem 1.5rem;
+            overflow-y: auto;
+            margin-top: 140px;
+            box-shadow: 2px 0 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .sidebar nav {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 1rem 1.5rem;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            border-left: 3px solid transparent;
+        }
+
+        .sidebar a:hover {
+            background: #f5f7ff;
+            border-left-color: #667eea;
+            padding-left: 2rem;
+        }
+
+        .main-content {
+            flex: 1;
+            padding: 140px 2rem 2rem;
+            background: white;
+            overflow-y: auto;
+        }
+
+        .content-section {
+            animation: fadeIn 0.5s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            margin-bottom: 2rem;
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 1.8rem;
+        }
+
+        .card p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            header {
+                position: relative;
+                padding: 1rem;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-top: 0;
+                box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
+                padding: 1.5rem 1rem;
+            }
+
+            .sidebar nav {
+                flex-direction: row;
+                gap: 0.5rem;
+                overflow-x: auto;
+            }
+
+            .sidebar a {
+                padding: 0.8rem 1rem;
+                white-space: nowrap;
+                border-left: none;
+                border-bottom: 3px solid transparent;
+            }
+
+            .sidebar a:hover {
+                border-bottom-color: #667eea;
+                border-left: none;
+                padding-left: 1rem;
+            }
+
+            .main-content {
+                padding: 1.5rem 1rem;
+            }
+
+            .card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
 </head>
+<body>
+    <header>
+        <div class="header-content">
+            <h1>The Truth about Rachael and Nate</h1>
+            <p>A modern journey through memories and moments</p>
+        </div>
+    </header>
 
-<frameset rows="76,*">
-	<frame name="banner" scrolling="no" noresize target="contents" src="Top.htm">
-	<frameset cols="249,*">
-		<frame name="contents" target="main" src="side.htm" scrolling="auto">
-		<frame name="main" src="Relationship.htm" target="_self">
-	</frameset>
-	<noframes>
-	<body>
+    <div class="container">
+        <aside class="sidebar">
+            <nav>
+                <a href="#home" onclick="loadContent('home')">🏠 Home</a>
+                <a href="#conversations" onclick="loadContent('conversations')">🎙️ Conversations</a>
+                <a href="#pictures" onclick="loadContent('pictures')">📸 Pictures</a>
+                <a href="#videos" onclick="loadContent('videos')">🎥 Videos</a>
+                <a href="#journal" onclick="loadContent('journal')">📔 Journal</a>
+                <a href="#audio" onclick="loadContent('audio')">🎵 Audio Files</a>
+            </nav>
+        </aside>
 
-	<p>This page uses frames, but your browser doesn't support them.</p>
+        <main class="main-content">
+            <div id="content-area" class="content-section">
+                <div class="card">
+                    <h2>Welcome</h2>
+                    <p>Welcome to our story. This is a collection of memories, conversations, and moments that tell the tale of our relationship. Click on any section in the sidebar to explore.</p>
+                </div>
+            </div>
+        </main>
+    </div>
 
-	</body>
-	</noframes>
-</frameset>
+    <script>
+        function loadContent(section) {
+            const contentArea = document.getElementById('content-area');
+            const sections = {
+                'home': {
+                    title: 'Home',
+                    content: '<p>Welcome to our story. This collection captures the essence of our relationship through conversations, photos, videos, and personal reflections.</p>'
+                },
+                'conversations': {
+                    title: 'Audio Conversations',
+                    content: '<p>Listen to our recorded conversations and discussions. These audio moments capture our thoughts and feelings.</p>'
+                },
+                'pictures': {
+                    title: 'Pictures',
+                    content: '<p>A visual journey through our favorite moments. Check out our gallery of memories from trips and everyday adventures.</p>'
+                },
+                'videos': {
+                    title: 'Videos',
+                    content: '<p>Video clips and recordings documenting our journey together.</p>'
+                },
+                'journal': {
+                    title: "Nate's Journal",
+                    content: '<p>Personal reflections and thoughts from the journal, capturing moments and feelings along the way.</p>'
+                },
+                'audio': {
+                    title: 'Audio Files',
+                    content: '<p>A collection of audio recordings. Note: You may need a media player like VLC for some formats.</p><p><a href="https://www.videolan.org/vlc/" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 500;">Download VLC Player →</a></p>'
+                }
+            };
 
+            const section_data = sections[section] || sections['home'];
+            contentArea.innerHTML = `
+                <div class="card">
+                    <h2>${section_data.title}</h2>
+                    ${section_data.content}
+                </div>
+            `;
+        }
+    </script>
+</body>
 </html>
