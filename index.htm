@@ -3,252 +3,258 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Truth about Rachael and Nate</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            min-height: 100vh;
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            min-height: 100vh;
-            gap: 0;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            background: rgba(255, 255, 255, 0.98);
-            backdrop-filter: blur(10px);
-            padding: 1.5rem 2rem;
-            box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .header-content {
-            max-width: 1200px;
-            margin: 0 auto;
-            text-align: center;
-        }
-
-        header h1 {
-            font-size: 2.5rem;
-            color: #667eea;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-        }
-
-        header p {
-            color: #666;
-            font-size: 0.95rem;
-            margin-top: 0.5rem;
-        }
-
-        .sidebar {
-            width: 280px;
-            background: white;
-            padding: 2rem 1.5rem;
-            overflow-y: auto;
-            margin-top: 140px;
-            box-shadow: 2px 0 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .sidebar nav {
-            display: flex;
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .sidebar a {
-            display: block;
-            padding: 1rem 1.5rem;
-            color: #667eea;
-            text-decoration: none;
-            border-radius: 8px;
-            transition: all 0.3s ease;
-            font-weight: 500;
-            border-left: 3px solid transparent;
-        }
-
-        .sidebar a:hover {
-            background: #f5f7ff;
-            border-left-color: #667eea;
-            padding-left: 2rem;
-        }
-
-        .main-content {
-            flex: 1;
-            padding: 140px 2rem 2rem;
-            background: white;
-            overflow-y: auto;
-        }
-
-        .content-section {
-            animation: fadeIn 0.5s ease-in;
-        }
-
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-
-        .card {
-            background: white;
-            border-radius: 12px;
-            padding: 2rem;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-            margin-bottom: 2rem;
-        }
-
-        .card h2 {
-            color: #667eea;
-            margin-bottom: 1rem;
-            font-size: 1.8rem;
-        }
-
-        .card p {
-            color: #666;
-            line-height: 1.8;
-        }
-
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-
-            header {
-                position: relative;
-                padding: 1rem;
-            }
-
-            header h1 {
-                font-size: 1.8rem;
-            }
-
-            .sidebar {
-                width: 100%;
-                margin-top: 0;
-                box-shadow: 0 2px 15px rgba(0, 0, 0, 0.05);
-                padding: 1.5rem 1rem;
-            }
-
-            .sidebar nav {
-                flex-direction: row;
-                gap: 0.5rem;
-                overflow-x: auto;
-            }
-
-            .sidebar a {
-                padding: 0.8rem 1rem;
-                white-space: nowrap;
-                border-left: none;
-                border-bottom: 3px solid transparent;
-            }
-
-            .sidebar a:hover {
-                border-bottom-color: #667eea;
-                border-left: none;
-                padding-left: 1rem;
-            }
-
-            .main-content {
-                padding: 1.5rem 1rem;
-            }
-
-            .card {
-                padding: 1.5rem;
-            }
-        }
-    </style>
+    <title>Rachael & Nate - Our Story</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <h1>The Truth about Rachael and Nate</h1>
-            <p>A modern journey through memories and moments</p>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">📖 Our Story</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#journal" class="nav-link">Journal</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-content">
+            <h1 class="hero-title">The Truth About<br><span class="highlight">Rachael & Nate</span></h1>
+            <p class="hero-subtitle">A journey of love, laughter, and unforgettable moments</p>
+            <button class="cta-button" onclick="document.querySelector('#about').scrollIntoView({behavior: 'smooth'})">Explore Our Story</button>
+        </div>
+        <div class="hero-background">
+            <div class="blob blob-1"></div>
+            <div class="blob blob-2"></div>
+            <div class="blob blob-3"></div>
         </div>
     </header>
 
-    <div class="container">
-        <aside class="sidebar">
-            <nav>
-                <a href="#home" onclick="loadContent('home')">🏠 Home</a>
-                <a href="#conversations" onclick="loadContent('conversations')">🎙️ Conversations</a>
-                <a href="#pictures" onclick="loadContent('pictures')">📸 Pictures</a>
-                <a href="#videos" onclick="loadContent('videos')">🎥 Videos</a>
-                <a href="#journal" onclick="loadContent('journal')">📔 Journal</a>
-                <a href="#audio" onclick="loadContent('audio')">🎵 Audio Files</a>
-            </nav>
-        </aside>
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Story</h2>
+                <p class="section-subtitle">A collection of memories and moments that define us</p>
+            </div>
 
-        <main class="main-content">
-            <div id="content-area" class="content-section">
-                <div class="card">
-                    <h2>Welcome</h2>
-                    <p>Welcome to our story. This is a collection of memories, conversations, and moments that tell the tale of our relationship. Click on any section in the sidebar to explore.</p>
+            <div class="about-grid">
+                <div class="about-card">
+                    <div class="card-icon">💬</div>
+                    <h3>Conversations</h3>
+                    <p>Audio conversations that capture the essence of our thoughts and feelings, preserved for all time.</p>
+                    <a href="conversations.html" class="card-link">Listen Now →</a>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">📸</div>
+                    <h3>Photo Gallery</h3>
+                    <p>Visual memories from NYC adventures and precious moments that made us smile.</p>
+                    <a href="gallery.html" class="card-link">View Gallery →</a>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🎥</div>
+                    <h3>Videos</h3>
+                    <p>Video clips documenting our journey together, captured from different perspectives.</p>
+                    <a href="videos.html" class="card-link">Watch Videos →</a>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">📓</div>
+                    <h3>Journal</h3>
+                    <p>Personal reflections and diary entries sharing intimate thoughts and experiences.</p>
+                    <a href="journal.html" class="card-link">Read Journal →</a>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">🎵</div>
+                    <h3>Audio Files</h3>
+                    <p>A collection of recordings from our phone and voice memos capturing spontaneous moments.</p>
+                    <a href="audio.html" class="card-link">Listen →</a>
+                </div>
+
+                <div class="about-card">
+                    <div class="card-icon">✉️</div>
+                    <h3>Communications</h3>
+                    <p>Emails and written exchanges showing the depth of our conversations over time.</p>
+                    <a href="communications.html" class="card-link">Read Messages →</a>
                 </div>
             </div>
-        </main>
-    </div>
+        </div>
+    </section>
 
-    <script>
-        function loadContent(section) {
-            const contentArea = document.getElementById('content-area');
-            const sections = {
-                'home': {
-                    title: 'Home',
-                    content: '<p>Welcome to our story. This collection captures the essence of our relationship through conversations, photos, videos, and personal reflections.</p>'
-                },
-                'conversations': {
-                    title: 'Audio Conversations',
-                    content: '<p>Listen to our recorded conversations and discussions. These audio moments capture our thoughts and feelings.</p>'
-                },
-                'pictures': {
-                    title: 'Pictures',
-                    content: '<p>A visual journey through our favorite moments. Check out our gallery of memories from trips and everyday adventures.</p>'
-                },
-                'videos': {
-                    title: 'Videos',
-                    content: '<p>Video clips and recordings documenting our journey together.</p>'
-                },
-                'journal': {
-                    title: "Nate's Journal",
-                    content: '<p>Personal reflections and thoughts from the journal, capturing moments and feelings along the way.</p>'
-                },
-                'audio': {
-                    title: 'Audio Files',
-                    content: '<p>A collection of audio recordings. Note: You may need a media player like VLC for some formats.</p><p><a href="https://www.videolan.org/vlc/" target="_blank" style="color: #667eea; text-decoration: none; font-weight: 500;">Download VLC Player →</a></p>'
-                }
-            };
+    <!-- Gallery Preview -->
+    <section class="gallery-preview" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <h2>Visual Memories</h2>
+                <p class="section-subtitle">A glimpse into our most treasured moments</p>
+            </div>
 
-            const section_data = sections[section] || sections['home'];
-            contentArea.innerHTML = `
-                <div class="card">
-                    <h2>${section_data.title}</h2>
-                    ${section_data.content}
+            <div class="gallery-grid">
+                <div class="gallery-item" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <div class="gallery-placeholder">📍</div>
+                    <div class="gallery-caption">NYC Adventures</div>
                 </div>
-            `;
-        }
-    </script>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);">
+                    <div class="gallery-placeholder">🌅</div>
+                    <div class="gallery-caption">Golden Moments</div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+                    <div class="gallery-placeholder">😊</div>
+                    <div class="gallery-caption">Candid Smiles</div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);">
+                    <div class="gallery-placeholder">🎉</div>
+                    <div class="gallery-caption">Celebrations</div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);">
+                    <div class="gallery-placeholder">💑</div>
+                    <div class="gallery-caption">Us Together</div>
+                </div>
+                <div class="gallery-item" style="background: linear-gradient(135deg, #30cfd0 0%, #330867 100%);">
+                    <div class="gallery-placeholder">🌃</div>
+                    <div class="gallery-caption">Night Moments</div>
+                </div>
+            </div>
+
+            <div class="gallery-cta">
+                <a href="gallery.html" class="cta-button">View Full Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Journal Preview -->
+    <section class="journal-preview" id="journal">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nate's Journal</h2>
+                <p class="section-subtitle">Thoughts, reflections, and personal moments</p>
+            </div>
+
+            <div class="journal-entries">
+                <article class="journal-card">
+                    <div class="journal-date">Beginning</div>
+                    <h3>Our Story Starts</h3>
+                    <p>Every great story has a beginning. This is ours. A journey filled with unexpected moments, genuine connections, and the kind of memories that stay with you forever.</p>
+                    <a href="journal.html#beginning" class="read-more">Read More →</a>
+                </article>
+
+                <article class="journal-card">
+                    <div class="journal-date">Along the Way</div>
+                    <h3>Growth & Change</h3>
+                    <p>People grow through their experiences and the people they meet. Every conversation shapes us. Every shared moment adds depth to who we are and what we become.</p>
+                    <a href="journal.html#growth" class="read-more">Read More →</a>
+                </article>
+
+                <article class="journal-card">
+                    <div class="journal-date">Throughout</div>
+                    <h3>Real Connection</h3>
+                    <p>Real connections are rare. They're built on honesty, vulnerability, and the willingness to truly see another person. These moments are proof that we were here, together.</p>
+                    <a href="journal.html#connection" class="read-more">Read More →</a>
+                </article>
+            </div>
+
+            <div class="journal-cta">
+                <a href="journal.html" class="cta-button">Read Full Journal</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="timeline">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Timeline</h2>
+                <p class="section-subtitle">Key moments in our journey</p>
+            </div>
+
+            <div class="timeline-items">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>The Beginning</h3>
+                        <p>Where it all started</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Growing Closer</h3>
+                        <p>Discovering each other</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>NYC Adventure</h3>
+                        <p>With Lonna - 6/19/2011</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3>Present Day</h3>
+                        <p>Preserving our memories</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in Touch</h2>
+                <p class="section-subtitle">We'd love to hear from you</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>About This Site</h3>
+                    <p>This is a digital archive of our story - a collection of memories, conversations, photos, and reflections that document our journey together.</p>
+                    <p>Built with love and a desire to preserve what matters most.</p>
+                </div>
+
+                <div class="contact-links">
+                    <h3>Explore</h3>
+                    <ul>
+                        <li><a href="conversations.html">Conversations</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="videos.html">Videos</a></li>
+                        <li><a href="journal.html">Journal</a></li>
+                        <li><a href="audio.html">Audio Files</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Rachael & Nate. All memories preserved. Built with ❤️</p>
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#journal">Journal</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

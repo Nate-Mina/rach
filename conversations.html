@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversations - Our Story</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .page-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 80px 0 40px;
+            margin-top: 70px;
+            text-align: center;
+        }
+        .page-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 4rem 0;
+        }
+        .content-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+        .content-item:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+        .back-link {
+            display: inline-block;
+            margin: 2rem 0;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        .back-link:hover {
+            color: #764ba2;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.htm" class="logo">📖 Our Story</a>
+            <ul class="nav-menu">
+                <li><a href="index.htm#home" class="nav-link">Home</a></li>
+                <li><a href="index.htm#about" class="nav-link">About</a></li>
+                <li><a href="index.htm#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="index.htm#journal" class="nav-link">Journal</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="page-header">
+        <div class="container">
+            <h1>💬 Conversations</h1>
+            <p>Audio conversations and discussions</p>
+        </div>
+    </div>
+
+    <section class="container">
+        <a href="index.htm" class="back-link">← Back to Home</a>
+        
+        <div class="content-grid">
+            <div class="content-item">
+                <h3>💭 Deep Conversations</h3>
+                <p>Audio recordings capturing meaningful discussions about life, dreams, and what matters most to us.</p>
+            </div>
+            <div class="content-item">
+                <h3>😄 Funny Moments</h3>
+                <p>Recorded laughter and hilarious exchanges that remind us why we love spending time together.</p>
+            </div>
+            <div class="content-item">
+                <h3>❤️ Heartfelt Words</h3>
+                <p>Intimate conversations showing the depth and sincerity of our connection.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Rachael & Nate. All memories preserved. Built with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
