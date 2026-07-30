@@ -268,6 +268,27 @@ p {
     font-size: 0.85rem;
 }
 
+/* Inner-page media (videos, audio) and album links */
+.story iframe,
+.story video,
+.story audio {
+    width: 100%;
+    max-width: 640px;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    border: 0;
+    border-radius: 8px;
+    margin: 1rem 0;
+    display: block;
+}
+
+.story .album-links a {
+    display: block;
+    margin: 0.75rem 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
 @media (max-width: 768px) {
     .container {
         padding: 0 1rem;
