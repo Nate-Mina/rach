@@ -164,10 +164,10 @@ p {
 }
 
 .sidebar {
-    background: #808080;
+    background: #1a1a1a;
     border-radius: var(--border-radius);
     padding: 1.5rem;
-    box-shadow: var(--shadow-sm);
+    box-shadow: var(--shadow-md);
     position: sticky;
     top: 1.5rem;
     text-align: center;
@@ -176,9 +176,9 @@ p {
 
 .sidebar h2 {
     font-size: 1.2rem;
-    color: #000000;
+    color: #ffffff;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #cccccc;
+    border-bottom: 2px solid #555555;
     padding-bottom: 0.5rem;
     font-family: 'Times New Roman', Times, serif;
 }
@@ -186,7 +186,7 @@ p {
 .sidebar nav a {
     display: block;
     padding: 0.5rem 0.75rem;
-    color: #0000EE;
+    color: #ffd24d;
     margin-bottom: 0.35rem;
     font-weight: bold;
     font-size: 1.05rem;
@@ -195,9 +195,9 @@ p {
 }
 
 .sidebar nav a:hover {
-    background: rgba(0, 0, 0, 0.18);
-    color: #ffffff;
-    text-decoration: underline;
+    background: #ffffff;
+    color: #1a1a1a;
+    text-decoration: none;
 }
 
 .sidebar .note {
