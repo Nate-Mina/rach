@@ -1,120 +1,109 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<TITLE>Adobe Web Photo Gallery</TITLE>
-<META name="generator" content="Adobe Photoshop(R) CS Web Photo Gallery">
-<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="images/galleryStyle.css" rel="stylesheet" type="text/css">
-
-<script>
-var windowWidth, windowHeight;
-var thumbHeight;
-var agent = navigator.userAgent.toLowerCase();
-var mac = (agent.indexOf("mac")!=-1);
-var ie = ((agent.indexOf("msie") != -1)&& (agent.indexOf('opera')==-1));
-
-function setHeight(thumbFrameHeight){
-	if (!(mac && ie)){
-		windowSize();
-		thumbHeight = thumbFrameHeight;
-
-		document.getElementById("BottomFrame").style.height=(thumbHeight+20) + "px";
-		document.getElementById("TopFrame").style.height=((windowHeight-thumbHeight) * .85) + "px";
-		document.getElementById("TopFrame").style.width=(windowWidth*.9) + "px";
-		document.getElementById("BottomFrame").style.width=(windowWidth*.9) + "px";
-	}
-}
-
-function resizeThis(){
-	setHeight(thumbHeight);
-}
-
-function windowSize() {
-  var myWidth = 0, myHeight = 0;
-  if( typeof( window.innerWidth ) == 'number' ) {
-    //Non-IE
-    myWidth = window.innerWidth;
-    myHeight = window.innerHeight;
-  } else if( document.documentElement &&
-      ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-    //IE 6+ in 'standards compliant mode'
-    myWidth = document.documentElement.clientWidth;
-    myHeight = document.documentElement.clientHeight;
-  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-    //IE 4 compatible
-    myWidth = document.body.clientWidth;
-    myHeight = document.body.clientHeight;
-
-  }
-  windowWidth = myWidth;
-  windowHeight = myHeight;
-}
-
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tons of Random Photos - The Truth about Rachael and Nate</title>
+    <link rel="stylesheet" href="../../styles.css">
 </head>
-<body bgcolor="#F9F4F4" marginheight=0 marginwidth=0 leftmargin=0 topmargin=0>
+<body>
 
-<table width=100% height=100%>
-<tr><td align=middle valign=middle>
+<header class="site-header">
+    <h1>The Truth about Rachael and Nate</h1>
+    <p>An honest chronicle of everything that happened between us</p>
+</header>
 
-<table cellpadding=0 cellspacing=0 border=0 valign=middle align=middle bgcolor="#FFFFFF">
-<tr>
-<td valign=top valign=middle align=middle style="border:1pt solid #999999">
-<table cellpadding=0 cellspacing=0 bgcolor="#CCCCCC">
-<tr bgcolor="#F0F0F0">
-<td colspan=4>
-<table width=100% bgcolor="#F0F0F0">
-<tr>
-<td align=left valign=top>
-<div id="titleframe" style="width: 642px; height: 42px">
-	<div class="titleContent">
-		<div class="banner">
-			<div class="title">Random Pics</div>
-			<div class="info"></div>
-			<div class="info">12-31-10 through 7/8/2011</div>
+<div class="layout">
+    <aside class="sidebar">
+        <h2>Explore</h2>
+        <nav>
+            <a href="../../index.htm">Home</a>
+            <a href="../../conversations.htm">Audio Conversations</a>
+            <a href="../pics.htm">Some Pictures</a>
+            <a href="../../vids.htm">Some Videos</a>
+            <a href="../../journal.htm">Nate's Partial Journal</a>
+            <a href="../../audio.htm">Audio Files</a>
+            <a href="../../about.htm">About This Site</a>
+        </nav>
+        <p class="note">Click any photo to see it full size.</p>
+    </aside>
 
-		</div>
-	</div>
+    <main class="content">
+        <article class="story">
+            <h2>Tons of Random Photos</h2>
+            <div class="gallery-grid">
+                <a href="images/2011-02-16_23-04-20_351.jpg" data-caption="2011-02-16_23-04-20_351.jpg"><img src="thumbnails/2011-02-16_23-04-20_351.jpg" alt="2011-02-16_23-04-20_351.jpg" loading="lazy"></a>
+                <a href="images/2011-04-05_12-23-45_732.jpg" data-caption="2011-04-05_12-23-45_732.jpg"><img src="thumbnails/2011-04-05_12-23-45_732.jpg" alt="2011-04-05_12-23-45_732.jpg" loading="lazy"></a>
+                <a href="images/2011-04-08_13-35-10_326.jpg" data-caption="2011-04-08_13-35-10_326.jpg"><img src="thumbnails/2011-04-08_13-35-10_326.jpg" alt="2011-04-08_13-35-10_326.jpg" loading="lazy"></a>
+                <a href="images/2011-04-09_12-32-48_721.jpg" data-caption="2011-04-09_12-32-48_721.jpg"><img src="thumbnails/2011-04-09_12-32-48_721.jpg" alt="2011-04-09_12-32-48_721.jpg" loading="lazy"></a>
+                <a href="images/2011-04-24_21-10-55_855.jpg" data-caption="2011-04-24_21-10-55_855.jpg"><img src="thumbnails/2011-04-24_21-10-55_855.jpg" alt="2011-04-24_21-10-55_855.jpg" loading="lazy"></a>
+                <a href="images/2011-04-24_21-11-02_695.jpg" data-caption="2011-04-24_21-11-02_695.jpg"><img src="thumbnails/2011-04-24_21-11-02_695.jpg" alt="2011-04-24_21-11-02_695.jpg" loading="lazy"></a>
+                <a href="images/2011-04-24_21-11-45_862.jpg" data-caption="2011-04-24_21-11-45_862.jpg"><img src="thumbnails/2011-04-24_21-11-45_862.jpg" alt="2011-04-24_21-11-45_862.jpg" loading="lazy"></a>
+                <a href="images/2011-04-24_21-23-07_148.jpg" data-caption="2011-04-24_21-23-07_148.jpg"><img src="thumbnails/2011-04-24_21-23-07_148.jpg" alt="2011-04-24_21-23-07_148.jpg" loading="lazy"></a>
+                <a href="images/2011-04-29_19-34-10_945.jpg" data-caption="2011-04-29_19-34-10_945.jpg"><img src="thumbnails/2011-04-29_19-34-10_945.jpg" alt="2011-04-29_19-34-10_945.jpg" loading="lazy"></a>
+                <a href="images/2011-04-30_01-48-04_962.jpg" data-caption="2011-04-30_01-48-04_962.jpg"><img src="thumbnails/2011-04-30_01-48-04_962.jpg" alt="2011-04-30_01-48-04_962.jpg" loading="lazy"></a>
+                <a href="images/2011-04-30_01-48-13_404.jpg" data-caption="2011-04-30_01-48-13_404.jpg"><img src="thumbnails/2011-04-30_01-48-13_404.jpg" alt="2011-04-30_01-48-13_404.jpg" loading="lazy"></a>
+                <a href="images/2011-05-04_20-40-48_723.jpg" data-caption="2011-05-04_20-40-48_723.jpg"><img src="thumbnails/2011-05-04_20-40-48_723.jpg" alt="2011-05-04_20-40-48_723.jpg" loading="lazy"></a>
+                <a href="images/2011-05-04_20-41-00_196.jpg" data-caption="2011-05-04_20-41-00_196.jpg"><img src="thumbnails/2011-05-04_20-41-00_196.jpg" alt="2011-05-04_20-41-00_196.jpg" loading="lazy"></a>
+                <a href="images/2011-05-04_20-41-05_858.jpg" data-caption="2011-05-04_20-41-05_858.jpg"><img src="thumbnails/2011-05-04_20-41-05_858.jpg" alt="2011-05-04_20-41-05_858.jpg" loading="lazy"></a>
+                <a href="images/2011-05-04_20-41-22_224.jpg" data-caption="2011-05-04_20-41-22_224.jpg"><img src="thumbnails/2011-05-04_20-41-22_224.jpg" alt="2011-05-04_20-41-22_224.jpg" loading="lazy"></a>
+                <a href="images/2011-05-04_20-43-12_949.jpg" data-caption="2011-05-04_20-43-12_949.jpg"><img src="thumbnails/2011-05-04_20-43-12_949.jpg" alt="2011-05-04_20-43-12_949.jpg" loading="lazy"></a>
+                <a href="images/2011-05-06_01-59-40_967.jpg" data-caption="2011-05-06_01-59-40_967.jpg"><img src="thumbnails/2011-05-06_01-59-40_967.jpg" alt="2011-05-06_01-59-40_967.jpg" loading="lazy"></a>
+                <a href="images/2011-05-06_04-11-42_739.jpg" data-caption="2011-05-06_04-11-42_739.jpg"><img src="thumbnails/2011-05-06_04-11-42_739.jpg" alt="2011-05-06_04-11-42_739.jpg" loading="lazy"></a>
+                <a href="images/2011-05-11_17-54-56_853.jpg" data-caption="2011-05-11_17-54-56_853.jpg"><img src="thumbnails/2011-05-11_17-54-56_853.jpg" alt="2011-05-11_17-54-56_853.jpg" loading="lazy"></a>
+                <a href="images/DSC05518.jpg" data-caption="DSC05518.jpg"><img src="thumbnails/DSC05518.jpg" alt="DSC05518.jpg" loading="lazy"></a>
+                <a href="images/DSC05520.jpg" data-caption="DSC05520.jpg"><img src="thumbnails/DSC05520.jpg" alt="DSC05520.jpg" loading="lazy"></a>
+                <a href="images/DSC05522.jpg" data-caption="DSC05522.jpg"><img src="thumbnails/DSC05522.jpg" alt="DSC05522.jpg" loading="lazy"></a>
+                <a href="images/DSC05523.jpg" data-caption="DSC05523.jpg"><img src="thumbnails/DSC05523.jpg" alt="DSC05523.jpg" loading="lazy"></a>
+                <a href="images/DSC05524.jpg" data-caption="DSC05524.jpg"><img src="thumbnails/DSC05524.jpg" alt="DSC05524.jpg" loading="lazy"></a>
+                <a href="images/DSC05525.jpg" data-caption="DSC05525.jpg"><img src="thumbnails/DSC05525.jpg" alt="DSC05525.jpg" loading="lazy"></a>
+                <a href="images/DSC05542.jpg" data-caption="DSC05542.jpg"><img src="thumbnails/DSC05542.jpg" alt="DSC05542.jpg" loading="lazy"></a>
+                <a href="images/DSC05550.jpg" data-caption="DSC05550.jpg"><img src="thumbnails/DSC05550.jpg" alt="DSC05550.jpg" loading="lazy"></a>
+                <a href="images/DSC05551.jpg" data-caption="DSC05551.jpg"><img src="thumbnails/DSC05551.jpg" alt="DSC05551.jpg" loading="lazy"></a>
+                <a href="images/DSC05558.jpg" data-caption="DSC05558.jpg"><img src="thumbnails/DSC05558.jpg" alt="DSC05558.jpg" loading="lazy"></a>
+                <a href="images/DSC05559.jpg" data-caption="DSC05559.jpg"><img src="thumbnails/DSC05559.jpg" alt="DSC05559.jpg" loading="lazy"></a>
+                <a href="images/DSC05560.jpg" data-caption="DSC05560.jpg"><img src="thumbnails/DSC05560.jpg" alt="DSC05560.jpg" loading="lazy"></a>
+                <a href="images/DSC05618.jpg" data-caption="DSC05618.jpg"><img src="thumbnails/DSC05618.jpg" alt="DSC05618.jpg" loading="lazy"></a>
+                <a href="images/DSC05619.jpg" data-caption="DSC05619.jpg"><img src="thumbnails/DSC05619.jpg" alt="DSC05619.jpg" loading="lazy"></a>
+                <a href="images/DSC05626.jpg" data-caption="DSC05626.jpg"><img src="thumbnails/DSC05626.jpg" alt="DSC05626.jpg" loading="lazy"></a>
+                <a href="images/IMG_0651.jpg" data-caption="IMG_0651.jpg"><img src="thumbnails/IMG_0651.jpg" alt="IMG_0651.jpg" loading="lazy"></a>
+                <a href="images/IMG_1382.jpg" data-caption="IMG_1382.jpg"><img src="thumbnails/IMG_1382.jpg" alt="IMG_1382.jpg" loading="lazy"></a>
+                <a href="images/IMG_1398.jpg" data-caption="IMG_1398.jpg"><img src="thumbnails/IMG_1398.jpg" alt="IMG_1398.jpg" loading="lazy"></a>
+                <a href="images/IMG_1400.jpg" data-caption="IMG_1400.jpg"><img src="thumbnails/IMG_1400.jpg" alt="IMG_1400.jpg" loading="lazy"></a>
+                <a href="images/IMG_1485.jpg" data-caption="IMG_1485.jpg"><img src="thumbnails/IMG_1485.jpg" alt="IMG_1485.jpg" loading="lazy"></a>
+                <a href="images/IMG_1504.jpg" data-caption="IMG_1504.jpg"><img src="thumbnails/IMG_1504.jpg" alt="IMG_1504.jpg" loading="lazy"></a>
+                <a href="images/IMG_1505.jpg" data-caption="IMG_1505.jpg"><img src="thumbnails/IMG_1505.jpg" alt="IMG_1505.jpg" loading="lazy"></a>
+                <a href="images/IMG_1506.jpg" data-caption="IMG_1506.jpg"><img src="thumbnails/IMG_1506.jpg" alt="IMG_1506.jpg" loading="lazy"></a>
+                <a href="images/IMG_1525.jpg" data-caption="IMG_1525.jpg"><img src="thumbnails/IMG_1525.jpg" alt="IMG_1525.jpg" loading="lazy"></a>
+                <a href="images/IMG_1526.jpg" data-caption="IMG_1526.jpg"><img src="thumbnails/IMG_1526.jpg" alt="IMG_1526.jpg" loading="lazy"></a>
+                <a href="images/IMG_1528.jpg" data-caption="IMG_1528.jpg"><img src="thumbnails/IMG_1528.jpg" alt="IMG_1528.jpg" loading="lazy"></a>
+                <a href="images/IMG_1602.jpg" data-caption="IMG_1602.jpg"><img src="thumbnails/IMG_1602.jpg" alt="IMG_1602.jpg" loading="lazy"></a>
+                <a href="images/IMG_1605.jpg" data-caption="IMG_1605.jpg"><img src="thumbnails/IMG_1605.jpg" alt="IMG_1605.jpg" loading="lazy"></a>
+                <a href="images/IMG_1609.jpg" data-caption="IMG_1609.jpg"><img src="thumbnails/IMG_1609.jpg" alt="IMG_1609.jpg" loading="lazy"></a>
+                <a href="images/IMG_1616.jpg" data-caption="IMG_1616.jpg"><img src="thumbnails/IMG_1616.jpg" alt="IMG_1616.jpg" loading="lazy"></a>
+                <a href="images/IMG_1680.jpg" data-caption="IMG_1680.jpg"><img src="thumbnails/IMG_1680.jpg" alt="IMG_1680.jpg" loading="lazy"></a>
+                <a href="images/IMG_1681.jpg" data-caption="IMG_1681.jpg"><img src="thumbnails/IMG_1681.jpg" alt="IMG_1681.jpg" loading="lazy"></a>
+                <a href="images/IMG_1704.jpg" data-caption="IMG_1704.jpg"><img src="thumbnails/IMG_1704.jpg" alt="IMG_1704.jpg" loading="lazy"></a>
+                <a href="images/IMG_1705.jpg" data-caption="IMG_1705.jpg"><img src="thumbnails/IMG_1705.jpg" alt="IMG_1705.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9981.jpg" data-caption="downsized_DSCN9981.jpg"><img src="thumbnails/downsized_DSCN9981.jpg" alt="downsized_DSCN9981.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9982.jpg" data-caption="downsized_DSCN9982.jpg"><img src="thumbnails/downsized_DSCN9982.jpg" alt="downsized_DSCN9982.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9983.jpg" data-caption="downsized_DSCN9983.jpg"><img src="thumbnails/downsized_DSCN9983.jpg" alt="downsized_DSCN9983.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9984.jpg" data-caption="downsized_DSCN9984.jpg"><img src="thumbnails/downsized_DSCN9984.jpg" alt="downsized_DSCN9984.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9990.jpg" data-caption="downsized_DSCN9990.jpg"><img src="thumbnails/downsized_DSCN9990.jpg" alt="downsized_DSCN9990.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9993.jpg" data-caption="downsized_DSCN9993.jpg"><img src="thumbnails/downsized_DSCN9993.jpg" alt="downsized_DSCN9993.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9994.jpg" data-caption="downsized_DSCN9994.jpg"><img src="thumbnails/downsized_DSCN9994.jpg" alt="downsized_DSCN9994.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9995.jpg" data-caption="downsized_DSCN9995.jpg"><img src="thumbnails/downsized_DSCN9995.jpg" alt="downsized_DSCN9995.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9996.jpg" data-caption="downsized_DSCN9996.jpg"><img src="thumbnails/downsized_DSCN9996.jpg" alt="downsized_DSCN9996.jpg" loading="lazy"></a>
+                <a href="images/downsized_DSCN9999.jpg" data-caption="downsized_DSCN9999.jpg"><img src="thumbnails/downsized_DSCN9999.jpg" alt="downsized_DSCN9999.jpg" loading="lazy"></a>
+            </div>
+        </article>
+    </main>
 </div>
-</td>
-<td align=right valign=top>
-<div id="titleframe">
-	<div class="titleContent">
-		<div class="banner">
-			<div class="info"></div>
-			<div class="email"><a href="mailto:"></a></div>
-		</div>
-	</div>
-</div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr bgcolor="#999999">
-<td colspan=4 height=1 width=100%><img src="images/spacer.gif" height=1></td>
-</tr>
-<tr bgcolor="#CCCCCC">
-<td valign=top width=10><img src="images/spacer.gif" width=10></td>
-<td valign=top align=middle style="width:125;height:550">
-<iframe id="BottomFrame" name="BottomFrame" frameborder="0" src="ThumbnailFrame.htm">
-	Your browser does not support iframes.
-</iframe>
-</td>
-<td valign=top width=10><img src="images/spacer.gif" width=10></td>
-<td valign=top style="width:675;height:550">
-<iframe id="TopFrame" name="TopFrame" frameborder="0" src="pages/2011-02-16_23-04-20_351.htm">
-	Your browser does not support iframes.
-</iframe>
-</td>
-</tr>
-</table>
 
-</td>
-</tr>
-</table>
+<footer class="site-footer">
+    <p>The Truth about Rachael and Nate &mdash; a personal archive.</p>
+</footer>
 
-</td>
-</tr>
-</table>
-
+<script src="../../gallery.js"></script>
 </body>
+</html>

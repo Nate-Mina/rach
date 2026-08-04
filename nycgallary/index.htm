@@ -1,120 +1,59 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<TITLE>Adobe Web Photo Gallery</TITLE>
-<META name="generator" content="Adobe Photoshop(R) CS Web Photo Gallery">
-<META http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link href="images/galleryStyle.css" rel="stylesheet" type="text/css">
-
-<script>
-var windowWidth, windowHeight;
-var thumbHeight;
-var agent = navigator.userAgent.toLowerCase();
-var mac = (agent.indexOf("mac")!=-1);
-var ie = ((agent.indexOf("msie") != -1)&& (agent.indexOf('opera')==-1));
-
-function setHeight(thumbFrameHeight){
-	if (!(mac && ie)){
-		windowSize();
-		thumbHeight = thumbFrameHeight;
-
-		document.getElementById("BottomFrame").style.height=(thumbHeight+20) + "px";
-		document.getElementById("TopFrame").style.height=((windowHeight-thumbHeight) * .85) + "px";
-		document.getElementById("TopFrame").style.width=(windowWidth*.9) + "px";
-		document.getElementById("BottomFrame").style.width=(windowWidth*.9) + "px";
-	}
-}
-
-function resizeThis(){
-	setHeight(thumbHeight);
-}
-
-function windowSize() {
-  var myWidth = 0, myHeight = 0;
-  if( typeof( window.innerWidth ) == 'number' ) {
-    //Non-IE
-    myWidth = window.innerWidth;
-    myHeight = window.innerHeight;
-  } else if( document.documentElement &&
-      ( document.documentElement.clientWidth || document.documentElement.clientHeight ) ) {
-    //IE 6+ in 'standards compliant mode'
-    myWidth = document.documentElement.clientWidth;
-    myHeight = document.documentElement.clientHeight;
-  } else if( document.body && ( document.body.clientWidth || document.body.clientHeight ) ) {
-    //IE 4 compatible
-    myWidth = document.body.clientWidth;
-    myHeight = document.body.clientHeight;
-
-  }
-  windowWidth = myWidth;
-  windowHeight = myHeight;
-}
-
-</script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pictures of Rachael and Nate on the NYC Trip - The Truth about Rachael and Nate</title>
+    <link rel="stylesheet" href="../styles.css">
 </head>
-<body bgcolor="#F9F4F4" marginheight=0 marginwidth=0 leftmargin=0 topmargin=0>
+<body>
 
-<table width=100% height=100%>
-<tr><td align=middle valign=middle>
+<header class="site-header">
+    <h1>The Truth about Rachael and Nate</h1>
+    <p>An honest chronicle of everything that happened between us</p>
+</header>
 
-<table cellpadding=0 cellspacing=0 border=0 valign=middle align=middle bgcolor="#FFFFFF">
-<tr>
-<td valign=top valign=middle align=middle style="border:1pt solid #999999">
-<table cellpadding=0 cellspacing=0 bgcolor="#CCCCCC">
-<tr bgcolor="#F0F0F0">
-<td colspan=4>
-<table width=100% bgcolor="#F0F0F0">
-<tr>
-<td align=left valign=top>
-<div id="titleframe" style="width: 745px; height: 42px">
-	<div class="titleContent">
-		<div class="banner">
-			<div class="title">Rachael, Nate, and Lonna Goes to NYC</div>
-			<div class="info"></div>
-			<div class="info"><font size="3">6/19/2011</font></div>
+<div class="layout">
+    <aside class="sidebar">
+        <h2>Explore</h2>
+        <nav>
+            <a href="../index.htm">Home</a>
+            <a href="../conversations.htm">Audio Conversations</a>
+            <a href="pics/pics.htm">Some Pictures</a>
+            <a href="../vids.htm">Some Videos</a>
+            <a href="../journal.htm">Nate's Partial Journal</a>
+            <a href="../audio.htm">Audio Files</a>
+            <a href="../about.htm">About This Site</a>
+        </nav>
+        <p class="note">Click any photo to see it full size.</p>
+    </aside>
 
-		</div>
-	</div>
+    <main class="content">
+        <article class="story">
+            <h2>Pictures of Rachael and Nate on the NYC Trip</h2>
+            <div class="gallery-grid">
+                <a href="images/IMG_1599.jpg" data-caption="IMG_1599.jpg"><img src="thumbnails/IMG_1599.jpg" alt="IMG_1599.jpg" loading="lazy"></a>
+                <a href="images/IMG_1602.jpg" data-caption="IMG_1602.jpg"><img src="thumbnails/IMG_1602.jpg" alt="IMG_1602.jpg" loading="lazy"></a>
+                <a href="images/IMG_1641.jpg" data-caption="IMG_1641.jpg"><img src="thumbnails/IMG_1641.jpg" alt="IMG_1641.jpg" loading="lazy"></a>
+                <a href="images/IMG_1644.jpg" data-caption="IMG_1644.jpg"><img src="thumbnails/IMG_1644.jpg" alt="IMG_1644.jpg" loading="lazy"></a>
+                <a href="images/IMG_1654.jpg" data-caption="IMG_1654.jpg"><img src="thumbnails/IMG_1654.jpg" alt="IMG_1654.jpg" loading="lazy"></a>
+                <a href="images/IMG_1661.jpg" data-caption="IMG_1661.jpg"><img src="thumbnails/IMG_1661.jpg" alt="IMG_1661.jpg" loading="lazy"></a>
+                <a href="images/IMG_1680.jpg" data-caption="IMG_1680.jpg"><img src="thumbnails/IMG_1680.jpg" alt="IMG_1680.jpg" loading="lazy"></a>
+                <a href="images/IMG_1681.jpg" data-caption="IMG_1681.jpg"><img src="thumbnails/IMG_1681.jpg" alt="IMG_1681.jpg" loading="lazy"></a>
+                <a href="images/IMG_1702.jpg" data-caption="IMG_1702.jpg"><img src="thumbnails/IMG_1702.jpg" alt="IMG_1702.jpg" loading="lazy"></a>
+                <a href="images/IMG_1704.jpg" data-caption="IMG_1704.jpg"><img src="thumbnails/IMG_1704.jpg" alt="IMG_1704.jpg" loading="lazy"></a>
+                <a href="images/IMG_1705.jpg" data-caption="IMG_1705.jpg"><img src="thumbnails/IMG_1705.jpg" alt="IMG_1705.jpg" loading="lazy"></a>
+                <a href="images/IMG_1707.jpg" data-caption="IMG_1707.jpg"><img src="thumbnails/IMG_1707.jpg" alt="IMG_1707.jpg" loading="lazy"></a>
+                <a href="images/IMG_1714.jpg" data-caption="IMG_1714.jpg"><img src="thumbnails/IMG_1714.jpg" alt="IMG_1714.jpg" loading="lazy"></a>
+            </div>
+        </article>
+    </main>
 </div>
-</td>
-<td align=right valign=top>
-<div id="titleframe">
-	<div class="titleContent">
-		<div class="banner">
-			<div class="info"></div>
-			<div class="email"><a href="mailto:"></a></div>
-		</div>
-	</div>
-</div>
-</td>
-</tr>
-</table>
-</td>
-</tr>
-<tr bgcolor="#999999">
-<td colspan=4 height=1 width=100%><img src="images/spacer.gif" height=1></td>
-</tr>
-<tr bgcolor="#CCCCCC">
-<td valign=top width=10><img src="images/spacer.gif" width=10></td>
-<td valign=top align=middle style="width:125;height:550">
-<iframe id="BottomFrame" name="BottomFrame" frameborder="0" src="ThumbnailFrame.htm">
-	Your browser does not support iframes.
-</iframe>
-</td>
-<td valign=top width=10><img src="images/spacer.gif" width=10></td>
-<td valign=top style="width:675;height:550">
-<iframe id="TopFrame" name="TopFrame" frameborder="0" src="pages/IMG_1599.htm">
-	Your browser does not support iframes.
-</iframe>
-</td>
-</tr>
-</table>
 
-</td>
-</tr>
-</table>
+<footer class="site-footer">
+    <p>The Truth about Rachael and Nate &mdash; a personal archive.</p>
+</footer>
 
-</td>
-</tr>
-</table>
-
+<script src="../gallery.js"></script>
 </body>
+</html>
