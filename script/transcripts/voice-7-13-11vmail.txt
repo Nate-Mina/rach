@@ -1,0 +1,8 @@
+=== 7-13-11 voicemail (system prompts + 3 messages from Rachael) ===
+SYSTEM: ...retention time is about to expire. You have three new voice messages. First voice message:
+RACHAEL: Hey, it's me. I'm just calling to say hi and see how your day's going. I was like super lost, like way far out, couldn't find a car shop... I wanted to call and say hi and I hope I get to see you. Miss... miss...
+SYSTEM: End of message. Sent yesterday, Tuesday, July 12th at 11:36 AM from Rachael. Duration: 22 seconds.
+RACHAEL: Hey, it's me. I was calling to see how your night went. I'm going over to Jenny's and wanted to see how you were doing... but I get how it is. I'm on my way over to Jenny's, so guess I'm not coming over to say good night. I'll talk to you later. Give me a call — your mom was asking me about some conference thing, Thursday night? Kisses, bye.
+SYSTEM: Message erased.
+RACHAEL: You just call and say good night? Uh... That's just... Bye.
+SYSTEM: Sent yesterday, Tuesday, July 12th at 11:29 PM from Rachael. Duration: 14 seconds.
