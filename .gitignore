@@ -4,3 +4,8 @@
 _notes/
 /bower_components/
 /node_modules/
+# Working/transcription artifacts (never commit)
+.hermes/
+.conv/
+__pycache__/
+script/__pycache__/
